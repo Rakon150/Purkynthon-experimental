@@ -1,0 +1,73 @@
+{
+  "nodes": [ 
+    {
+      "id": "n1",
+      "type": "input",
+      "position": {
+        "x": 100,
+        "y": 200
+      },
+      "data": {
+        "label": "Input Number"
+      },
+      "code": "return 5",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "measured": {
+        "width": 150,
+        "height": 40
+      },
+      "selected": false
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "data": {
+        "label": "Double Processor"
+      },
+      "code": "input_num = input_value\n\nreturn input_value + 1",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "measured": {
+        "width": 150,
+        "height": 40
+      },
+      "selected": false
+    },
+    {
+      "id": "n3",
+      "type": "output",
+      "position": {
+        "x": 700,
+        "y": 200
+      },
+      "data": {
+        "label": "Console Output"
+      },
+      "code": "print(input_value)",
+      "sourcePosition": "right",
+      "targetPosition": "left",
+      "measured": {
+        "width": 150,
+        "height": 40
+      },
+      "selected": true
+    }
+  ],
+
+  "connections": [
+    {
+      "id": "e1-2",
+      "source": "n1",
+      "target": "n2"
+    },
+    {
+      "id": "e2-3",
+      "source": "n2",
+      "target": "n3"
+    }
+  ]
+}
